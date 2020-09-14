@@ -1,0 +1,82 @@
+:root {
+    --dark-color: #2d2c2c;
+    --blue-solid: #00155a;
+    --blue-transparent: rgb(42, 81, 255);
+    --blue-transparent-alt: rgba(10, 26, 79, 0.5);
+    --blue-light: #42d3ed ;
+    --yellow-light: #f7db90;
+    --yellow-solid: #db8400 ;
+    --red-light: #e92300 ;
+    --gradient-color: linear-gradient(to right, #FEAC5E, #C779D0, #4BC0C8);
+    --gradient-color-two: linear-gradient(to right, #0072ff, #3a0061);
+}
+
+.container { 
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+}
+  
+.card {
+    display: grid;
+    grid-templates-rows: auto 1fr auto;
+    width: 300px;
+    height: auto;
+    background-image: var(--gradient-color-two);
+    padding: 0;
+    border-radius: 20px;
+}
+  
+.box-shadow {
+    -webkit-box-shadow: 0px 2px 25px 3px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 2px 25px 3px rgba(0,0,0,0.57);
+    box-shadow: 0px 2px 25px 3px rgba(0,0,0,0.57);
+}
+  
+.cardTitle {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+  
+.cardBody {
+    height: 11rem;
+    padding-left: 0.5rem;
+/*     display: grid;*/
+    place-items: center; 
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    background-image:  var(--gradient-color-two) ;
+    line-height: 0px;
+}
+  
+.cardFooter {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #240029 ;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+}
+  
+.stackCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.stackCards .card {
+    flex: 1 1 300px;
+    flex: 0 1 300px;
+    margin: 15px;
+}
